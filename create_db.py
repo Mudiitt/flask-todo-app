@@ -6,4 +6,5 @@ with app.app_context():
         print("Tables created successfully.")
     except Exception as e:
         print(f"Error occurred: {e}")
+    
 
