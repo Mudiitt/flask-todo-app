@@ -4,7 +4,6 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
-
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
@@ -50,7 +49,7 @@ def delete(sno):
 def show():
       allTodo = Todo.query.all()
       print(allTodo)
-      return "this is show page"
+      return "This is main page"
 
 
 if __name__ == "__main__":
